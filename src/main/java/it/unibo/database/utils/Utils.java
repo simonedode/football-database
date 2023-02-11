@@ -9,6 +9,11 @@ import java.util.Optional;
 
 public final class Utils {
     private Utils() {}
+
+    public static java.sql.Date dateToSqlDate(final java.util.Date date) {
+        return date == null ? null : new java.sql.Date(date.getTime());
+    }
+
     public static Optional<java.util.Date> convertStringDateToDate(final String date){
         final String[] birthSplit = date.split("/");
         return buildDate(Integer.parseInt(birthSplit[0]), Integer.parseInt(birthSplit[1]), Integer.parseInt(birthSplit[2]));
