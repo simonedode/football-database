@@ -1,5 +1,7 @@
 package it.unibo.database.utils;
 
+import javafx.scene.control.TextField;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
@@ -20,6 +22,12 @@ public final class Utils {
             return Optional.of(date);
         } catch (final ParseException e) {
             return Optional.empty();
+        }
+    }
+
+    public static void hideTextField(TextField... fields){
+        for (var field : fields) {
+            field.setText("");
         }
     }
 }
