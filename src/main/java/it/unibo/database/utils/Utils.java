@@ -1,7 +1,5 @@
 package it.unibo.database.utils;
 
-import javafx.scene.control.TextField;
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
