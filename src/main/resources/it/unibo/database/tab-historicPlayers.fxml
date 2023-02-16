@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="it.unibo.database.controller.HistoricPlayersController"
+            prefHeight="400.0" prefWidth="600.0">
+    <Pane prefHeight="200.0" prefWidth="200.0">
+        <TextField fx:id="stoTeam" layoutX="36.0" layoutY="116.0" promptText="nome squadra"/>
+        <TextField fx:id="stoSalary" layoutX="36.0" layoutY="183.0" promptText="stipendio"/>
+        <TextField fx:id="stoNumber" layoutX="36.0" layoutY="149.0" promptText="numero maglia"/>
+        <TextField fx:id="stoCardPlayer" layoutX="36.0" layoutY="21.0" promptText="tesserino giocatore"/>
+        <TextField fx:id="stoDateStart" layoutX="36.0" layoutY="53.0"
+                   promptText="data inizio (gg/mm/aaaa)"/>
+        <Button layoutX="36.0" layoutY="215.0" mnemonicParsing="false"
+                onAction="#addHistoryPlayer" prefHeight="25.0" prefWidth="132.0" text="Inserisci"/>
+        <TableView fx:id="stoTableView" layoutX="234.0" layoutY="38.0" prefHeight="382.0" prefWidth="657.0">
+            <columns>
+                <TableColumn fx:id="tabStoPlayer" editable="false" prefWidth="97.60003662109375"
+                             text="Giocatore"/>
+                <TableColumn fx:id="tabStoDateStart" editable="false" prefWidth="102.40008544921875"
+                             text="DataInizio"/>
+                <TableColumn fx:id="tabStoDateFinish" editable="false" prefWidth="102.4000244140625"
+                             text="DataFine"/>
+                <TableColumn fx:id="tabStoTeam" editable="false" prefWidth="124.800048828125"
+                             text="Squadra"/>
+                <TableColumn fx:id="tabStoSalary" editable="false" prefWidth="127.20001220703125"
+                             text="Stipendio"/>
+                <TableColumn fx:id="tabStoNumber" editable="false" prefWidth="100.7999267578125"
+                             text="N.Maglia"/>
+            </columns>
+        </TableView>
+        <TextField fx:id="stoDateFinish" layoutX="36.0" layoutY="84.0" promptText="data fine (gg/mm/aaaa)"/>
+        <TextField fx:id="stoSearchCardPlayer" layoutX="36.0" layoutY="257.0"
+                   promptText="tesserino giocatore"/>
+        <Button layoutX="36.0" layoutY="290.0" mnemonicParsing="false"
+                onAction="#searchHistoryPlayer" prefHeight="25.0" prefWidth="132.0" text="Storico"/>
+        <TextField fx:id="stoModifyTeam" layoutX="36.0" layoutY="330.0" promptText="squadra"/>
+        <TextField fx:id="stoModifyYear" layoutX="36.0" layoutY="362.0" promptText="data inizio (gg/mm/aaaa)"/>
+        <Button layoutX="34.0" layoutY="459.0" mnemonicParsing="false"
+                onAction="#modifyNumber" prefHeight="25.0" prefWidth="152.0" text="Modifica Numero Maglia"/>
+        <TextField fx:id="stoModifyNumber" layoutX="37.0" layoutY="427.0" promptText="nuovo numero maglia"/>
+        <TextField fx:id="stoModifyCardPlayer" layoutX="36.0" layoutY="395.0"
+                   promptText="tesserino giocatore"/>
+    </Pane>
+</AnchorPane>
