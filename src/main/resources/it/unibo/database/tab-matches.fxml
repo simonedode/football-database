@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="it.unibo.database.controller.MatchesController"
+            prefHeight="400.0" prefWidth="600.0">
+    <Pane prefHeight="200.0" prefWidth="200.0">
+        <TextField fx:id="matchTeamHome" layoutX="23.0" layoutY="26.0" promptText="squadra in casa"/>
+        <TextField fx:id="matchGolAway" layoutX="23.0" layoutY="194.0" promptText="gol trasferta"/>
+        <TextField fx:id="matchGolHome" layoutX="23.0" layoutY="160.0" promptText="gol casa"/>
+        <TextField fx:id="matchNumberDay" layoutX="23.0" layoutY="127.0" promptText="numero giornata"/>
+        <TextField fx:id="matchChampionship" layoutX="23.0" layoutY="94.0" promptText="anno campionato"/>
+        <TextField fx:id="matchTeamAway" layoutX="23.0" layoutY="61.0" promptText="squadra in trasferta"/>
+        <Button layoutX="23.0" layoutY="228.0" mnemonicParsing="false" onAction="#addMatch"
+                prefHeight="25.0" prefWidth="134.0" text="Inserisci"/>
+        <TableView fx:id="matchTableView" layoutX="236.0" layoutY="26.0" prefHeight="350.0"
+                   prefWidth="600.0">
+            <columns>
+                <TableColumn fx:id="tabMatchTeamHome" editable="false" prefWidth="100.0"
+                             text="SquadraCasa"/>
+                <TableColumn fx:id="tabMatchTeamAway" editable="false" prefWidth="104.0"
+                             text="SquadraTrasferta"/>
+                <TableColumn fx:id="tabMatchChampionship" editable="false" prefWidth="96.0"
+                             text="Campionato"/>
+                <TableColumn fx:id="tabMatchNumberDay" editable="false" prefWidth="100.0"
+                             text="N.Giornata"/>
+                <TableColumn fx:id="tabMatchGolHome" editable="false" prefWidth="100.0" text="GolCasa"/>
+                <TableColumn fx:id="tabMatchGolAway" editable="false" prefWidth="99.20001220703125"
+                             text="GolTrasferta"/>
+            </columns>
+        </TableView>
+        <TextField fx:id="matchModifyYear" layoutX="23.0" layoutY="271.0" promptText="anno"/>
+        <TextField fx:id="matchModifyNumberDay" layoutX="23.0" layoutY="304.0"
+                   promptText="numero giornata"/>
+        <TextField fx:id="matchModifyTeamHome" layoutX="23.0" layoutY="337.0" promptText="squadra in casa"/>
+        <TextField fx:id="matchModifyGolHome" layoutX="23.0" layoutY="375.0" promptText="gol casa"/>
+        <TextField fx:id="matchModifyGolAway" layoutX="23.0" layoutY="409.0" promptText="gol trasferta"/>
+        <Button layoutX="23.0" layoutY="447.0" mnemonicParsing="false"
+                onAction="#modifyResultMatch" prefHeight="25.0" prefWidth="134.0"
+                text="Modifica Risultato"/>
+        <Button layoutX="702.0" layoutY="447.0" mnemonicParsing="false"
+                onAction="#showMatch" prefHeight="25.0" prefWidth="134.0" text="Mostra Partite"/>
+        <TextField fx:id="matchGolsYear" layoutX="207.0" layoutY="409.0" promptText="anno campionato"/>
+        <Button layoutX="207.0" layoutY="447.0" mnemonicParsing="false"
+                onAction="#searchMatchMoreGoals" prefHeight="25.0" prefWidth="136.0"
+                text="Partita con più gol"/>
+    </Pane>
+</AnchorPane>
