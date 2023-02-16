@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="it.unibo.database.controller.ParticipationController"
+            minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+    <TextField fx:id="statsYear" layoutX="28.0" layoutY="40.0" promptText="anno campionato"/>
+    <TextField fx:id="statsModifyPlayer" layoutX="28.0" layoutY="305.0"
+               promptText="tesserino giocatore"/>
+    <TextField fx:id="statsTeamAway" layoutX="28.0" layoutY="112.0" promptText="squadra in trasferta"/>
+    <TextField fx:id="statsTeamHome" layoutX="28.0" layoutY="76.0" promptText="squadra in casa"/>
+    <Button layoutX="28.0" layoutY="149.0" mnemonicParsing="false"
+            onAction="#showStats" prefHeight="26.0" prefWidth="130.0" text="Statistiche Partita"/>
+    <TableView fx:id="statsTableView" layoutX="207.0" layoutY="38.0" prefHeight="330.0"
+               prefWidth="622.0">
+        <columns>
+            <TableColumn fx:id="tabStatsYear" prefWidth="92.80003356933594" text="Anno"/>
+            <TableColumn fx:id="tabStatsTeamHome" prefWidth="88.79998779296875" text="SquadraCasa"/>
+            <TableColumn fx:id="tabStatsNumberDay" prefWidth="109.59991455078125"
+                         text="NumeroGiornata"/>
+            <TableColumn fx:id="tabStatsPlayer" prefWidth="84.00006103515625" text="Giocatore"/>
+            <TableColumn fx:id="tabStatsGol" prefWidth="88.0" text="Gol"/>
+            <TableColumn fx:id="tabStatsShots" prefWidth="81.5999755859375" text="TiriInPorta"/>
+            <TableColumn fx:id="tabStatsMinutes" prefWidth="82" text="Minuti"/>
+        </columns>
+    </TableView>
+    <TextField fx:id="statsModifyYear" layoutX="28.0" layoutY="200.0" promptText="anno campionato"/>
+    <TextField fx:id="statsModifyNumberDay" layoutX="28.0" layoutY="272.0"
+               promptText="numero giornata"/>
+    <TextField fx:id="statsModifyTeamHome" layoutX="28.0" layoutY="236.0" promptText="squadra in casa"/>
+    <Button layoutX="28.0" layoutY="405.0" mnemonicParsing="false"
+            onAction="#modifyStats" prefHeight="26.0" prefWidth="130.0" text="Modifica"/>
+    <TextField fx:id="statsModifyNumber" layoutX="28.0" layoutY="338.0" promptText="numero"/>
+    <RadioButton fx:id="statsModifyGol" layoutX="28.0" layoutY="375.0" mnemonicParsing="false"
+                 selected="true" text="gol" onAction="#selectRadioGol"/>
+    <RadioButton fx:id="statsModifyShots" layoutX="137.0" layoutY="376.0" mnemonicParsing="false"
+                 text="tiri in porta" onAction="#selectRadioShots"/>
+    <RadioButton fx:id="statsModifyMinutes" layoutX="75.0" layoutY="376.0" mnemonicParsing="false"
+                 text="minuti" onAction="#selectRadioMinutes"/>
+    <Button layoutX="697.0" layoutY="418.0" mnemonicParsing="false"
+            onAction="#showStatsMatches" prefHeight="26.0" prefWidth="132.0"
+            text="Statistiche Giocatori"/>
+    <TextField fx:id="showStatsYear" layoutX="679.0" layoutY="380.0" promptText="anno campionato"/>
+</AnchorPane>
