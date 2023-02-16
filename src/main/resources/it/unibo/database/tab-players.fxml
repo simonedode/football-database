@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="it.unibo.database.controller.PlayersController"
+            prefHeight="400.0" prefWidth="600.0">
+    <Pane prefHeight="543.0" prefWidth="890.0">
+        <TextField fx:id="playerName" layoutX="14.0" layoutY="21.0" promptText="nome"/>
+        <TextField fx:id="playerSurname" layoutX="14.0" layoutY="52.0" promptText="cognome"/>
+        <TextField fx:id="playerCF" layoutX="14.0" layoutY="84.0" promptText="codice fiscale"/>
+        <TextField fx:id="playerDate" layoutX="14.0" layoutY="115.0" promptText="nascita (gg/mm/aaaa)"/>
+        <TextField fx:id="playerNationality" layoutX="14.0" layoutY="147.0" promptText="nazionalità"/>
+        <TextField fx:id="playerPresence" layoutX="14.0" layoutY="214.0" promptText="numero presenze"/>
+        <TextField fx:id="playerTeam" layoutX="14.0" layoutY="248.0" promptText="squadra"/>
+        <TextField fx:id="playerDateStart" layoutX="14.0" layoutY="281.0" promptText="data inizio (gg/mm/aaaa)"/>
+        <Button layoutX="14.0" layoutY="351.0" mnemonicParsing="false"
+                onAction="#addPlayer" prefHeight="28.0" prefWidth="138.0" text="Inserisci"/>
+        <TextField fx:id="playerID" layoutX="14.0" layoutY="410.0" promptText="tesserino giocatore"/>
+        <ComboBox fx:id="playerRole" cache="true" layoutX="13.0" layoutY="182.0" prefWidth="72.0"
+                  promptText="ruolo" visibleRowCount="4"/>
+        <TableView fx:id="playerTableView" layoutX="170.0" layoutY="28.0" prefHeight="429.0"
+                   prefWidth="725.0" >
+            <columns>
+                <TableColumn fx:id="tabPlayerName" editable="false" prefWidth="55.0" sortable="false"
+                             text="Nome"/>
+                <TableColumn fx:id="tabPlayerSurname" editable="false" prefWidth="75.0" sortable="false"
+                             text="Cognome"/>
+                <TableColumn fx:id="tabPlayerCF" editable="false" prefWidth="45.79998779296875"
+                             sortable="false" text="CF"/>
+                <TableColumn fx:id="tabPlayerDate" editable="false" prefWidth="78.4000244140625"
+                             sortable="false" text="DataNascita"/>
+                <TableColumn fx:id="tabPlayerNationality" editable="false" prefWidth="76.79998779296875"
+                             sortable="false" text="Nazionalità"/>
+                <TableColumn fx:id="tabPlayerCard" editable="false" prefWidth="75.20001220703125"
+                             sortable="false" text="Tesserino"/>
+                <TableColumn fx:id="tabPlayerRole" editable="false" prefWidth="40.0" sortable="false"
+                             text="Ruolo"/>
+                <TableColumn fx:id="tabPlayerPresence" prefWidth="55.0" sortable="false"
+                             text="Presenze"/>
+                <TableColumn fx:id="tabPlayerTeam" editable="false" prefWidth="69.5999755859375"
+                             sortable="false" text="Squadra"/>
+                <TableColumn fx:id="tabPlayerPeriod" editable="false" prefWidth="82.0" sortable="false"
+                             text="DataInizio"/>
+                <TableColumn fx:id="tabPlayerSalary" editable="false" prefWidth="70.0" sortable="false"
+                             text="Stipendio"/>
+            </columns>
+        </TableView>
+        <Button layoutX="14.0" layoutY="442.0" mnemonicParsing="false"
+                onAction="#deletePlayer" prefHeight="25.0" prefWidth="136.0" text="Elimina"/>
+        <TextField fx:id="playerSalary" layoutX="14.0" layoutY="317.0" promptText="Stipendio"/>
+    </Pane>
+
+</AnchorPane>
