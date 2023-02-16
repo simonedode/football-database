@@ -1,13 +1,10 @@
 # Football Database
 
----
-
 ### A simple application to manage information about football championships
 ![Application image](./images/application.png)
 
 ## Prerequisites
 
----
 
 To run this application, you need to install on your machine:
 
@@ -15,7 +12,7 @@ To run this application, you need to install on your machine:
 - [Gradle](https://gradle.org/install/) >= 7.1
 
 ## Installation
-________________________________________________________________
+
 To install this application you need to clone this repository and run the following commands:
 ```bash
 git clone https://github.com/simonedode/football-database.git
@@ -29,7 +26,6 @@ To build the assets, you need to run the following command:
 ```
 
 ## Configuration
-________________________________________________________________
 To configure the database connection, you have to set the `DATABASE_*` variables in `app.config` file with your credentials
 - `DATABASE_USERNAME`: The database username
 - `DATABASE_PASSWORD`: The database password
@@ -40,7 +36,6 @@ To configure the database connection, you have to set the `DATABASE_*` variables
 >- `DATABASE_TABLE`: football
 
 ## Run
-________________________________________________________________
 To run the application you have to run the following command:
 ```bash
 ./gradlew run
