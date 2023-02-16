@@ -10,7 +10,7 @@ public class ApplicationDB extends javafx.application.Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(ApplicationDB.class.getResource("database.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(ApplicationDB.class.getResource("football.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Campionato di Calcio");
         stage.setScene(scene);

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<TabPane id="TabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+         nodeOrientation="LEFT_TO_RIGHT" prefHeight="526.0" prefWidth="913.0" tabClosingPolicy="UNAVAILABLE"
+         xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+         fx:controller="it.unibo.database.controller.ControllerDB">
+    <cursor>
+        <Cursor fx:constant="DEFAULT"/>
+    </cursor>
+    <Tab text="Giocatori">
+        <fx:include source="tab-players.fxml" />
+    </Tab>
+    <Tab text="Allenatori">
+        <fx:include source="tab-coaches.fxml" />
+    </Tab>
+    <Tab text="Squadre">
+        <fx:include source="tab-teams.fxml" />
+    </Tab>
+    <Tab text="StoricoAllenatori">
+        <fx:include source="tab-historicCoaches.fxml" />
+    </Tab>
+    <Tab text="StoricoGiocatori">
+        <fx:include source="tab-historicPlayers.fxml" />
+    </Tab>
+    <Tab text="Partite">
+        <fx:include source="tab-matches.fxml" />
+    </Tab>
+    <Tab text="StatistichePartita">
+        <fx:include source="tab-participation.fxml" />
+    </Tab>
+    <Tab text="Trofei Giocatori">
+        <fx:include source="tab-trophiesPlayers.fxml" />
+    </Tab>
+    <Tab text="Trofei Squadre">
+        <fx:include source="tab-trophiesTeams.fxml" />
+    </Tab>
+</TabPane>
