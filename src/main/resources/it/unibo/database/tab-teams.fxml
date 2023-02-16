@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="it.unibo.database.controller.TeamsController"
+            prefHeight="400.0" prefWidth="600.0">
+    <Pane prefHeight="200.0" prefWidth="200.0">
+        <TextField fx:id="teamName" layoutX="14.0" layoutY="35.0" promptText="nome"/>
+        <TextField fx:id="teamColors" layoutX="14.0" layoutY="107.0" promptText="colori"/>
+        <TextField fx:id="teamCity" layoutX="14.0" layoutY="70.0" promptText="città"/>
+        <Button layoutX="14.0" layoutY="141.0" mnemonicParsing="false" onAction="#addTeam"
+                prefHeight="25.0" prefWidth="126.0" text="Inserisci"/>
+        <TextField fx:id="teamID" layoutX="14.0" layoutY="206.0" promptText="nome squadra"/>
+        <TableView fx:id="teamTableView" layoutX="247.0" layoutY="35.0" prefHeight="427.0" prefWidth="525">
+            <columns>
+                <TableColumn fx:id="tabTeamName" editable="false" prefWidth="175" text="Nome"/>
+                <TableColumn fx:id="tabTeamCity" editable="false" prefWidth="175" text="Città"/>
+                <TableColumn fx:id="tabTeamColors" editable="false" prefWidth="175" text="Colori"/>
+            </columns>
+        </TableView>
+        <ComboBox fx:id="teamChooseRole" cache="true" layoutX="169.0" layoutY="285.0"
+                  prefHeight="25.0" prefWidth="72.0" promptText="ruolo" visibleRowCount="4"/>
+        <TextField fx:id="teamNameRole" layoutX="14.0" layoutY="285.0" promptText="nome squadra"/>
+        <Button layoutX="14.0" layoutY="319.0" mnemonicParsing="false"
+                onAction="#showNumberInRole" prefHeight="25.0" prefWidth="167.0"
+                text="Numero Giocatori Nel Ruolo"/>
+        <Button layoutX="14.0" layoutY="236.0" mnemonicParsing="false"
+                onAction="#deleteTeam" prefHeight="25.0" prefWidth="148.0" text="Elimina"/>
+    </Pane>
+</AnchorPane>
