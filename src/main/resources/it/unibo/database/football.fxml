@@ -5,8 +5,7 @@
 <?import javafx.scene.control.TabPane?>
 <TabPane id="TabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
          nodeOrientation="LEFT_TO_RIGHT" prefHeight="526.0" prefWidth="913.0" tabClosingPolicy="UNAVAILABLE"
-         xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
-         fx:controller="it.unibo.database.controller.ControllerDB">
+         xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
     <cursor>
         <Cursor fx:constant="DEFAULT"/>
     </cursor>
