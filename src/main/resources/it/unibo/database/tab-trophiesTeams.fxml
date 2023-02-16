@@ -7,6 +7,16 @@
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="it.unibo.database.controller.TrophiesTeamsController"
             minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+    <TextField fx:id="trophyTeamName" layoutX="62.0" layoutY="59.0" promptText="nome"/>
+    <TextField fx:id="trophyTeamYear" layoutX="62.0" layoutY="94.0" promptText="anno campionato"/>
+    <TextField fx:id="trophyTeam" layoutX="63.0" layoutY="130.0" prefHeight="26.0" prefWidth="149.0"
+               promptText="nome squadra"/>
+    <Button layoutX="62.0" layoutY="169.0" mnemonicParsing="false"
+            onAction="#addTrophyTeam" prefHeight="25.0" prefWidth="129.0" text="Inserisci"/>
+    <TextField fx:id="trophyTeamSearchYear" layoutX="63.0" layoutY="229.0" promptText="anno"/>
+    <TextField fx:id="trophyTeamSearch" layoutX="63.0" layoutY="265.0" promptText="nome squadra"/>
+    <Button layoutX="62.0" layoutY="302.0" mnemonicParsing="false"
+            onAction="#searchTrophyTeams" prefHeight="25.0" prefWidth="129.0" text="Trofei Squadra"/>
     <TableView fx:id="trophyTeamTableView" layoutX="329.0" layoutY="36.0" prefHeight="366.0"
                prefWidth="530.0">
         <columns>
@@ -18,14 +28,4 @@
                          text="Squadra"/>
         </columns>
     </TableView>
-    <TextField fx:id="trophyTeam" layoutX="63.0" layoutY="130.0" prefHeight="26.0" prefWidth="149.0"
-               promptText="nome squadra"/>
-    <TextField fx:id="trophyTeamYear" layoutX="62.0" layoutY="94.0" promptText="anno campionato"/>
-    <TextField fx:id="trophyTeamName" layoutX="62.0" layoutY="59.0" promptText="nome"/>
-    <Button layoutX="62.0" layoutY="169.0" mnemonicParsing="false"
-            onAction="#addTrophyTeam" prefHeight="25.0" prefWidth="129.0" text="Inserisci"/>
-    <TextField fx:id="trophyTeamSearch" layoutX="63.0" layoutY="265.0" promptText="nome squadra"/>
-    <Button layoutX="62.0" layoutY="302.0" mnemonicParsing="false"
-            onAction="#searchTrophyTeams" prefHeight="25.0" prefWidth="129.0" text="Trofei Squadra"/>
-    <TextField fx:id="trophyTeamSearchYear" layoutX="63.0" layoutY="229.0" promptText="anno"/>
 </AnchorPane>

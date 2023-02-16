@@ -8,6 +8,16 @@
             fx:controller="it.unibo.database.controller.TrophiesPlayersController"
             prefHeight="400.0" prefWidth="600.0">
     <Pane prefHeight="200.0" prefWidth="200.0">
+        <TextField fx:id="trophyName" layoutX="57.0" layoutY="55.0" promptText="nome"/>
+        <TextField fx:id="trophyYear" layoutX="57.0" layoutY="91.0" promptText="anno campionato"/>
+        <TextField fx:id="trophyPlayer" layoutX="57.0" layoutY="129.0" prefHeight="25.0" prefWidth="151.0"
+                   promptText="tesserino giocatore"/>
+        <Button layoutX="56.0" layoutY="167.0" mnemonicParsing="false"
+                onAction="#addTrophy" prefHeight="25.0" prefWidth="129.0" text="Inserisci"/>
+        <TextField fx:id="trophySearchCardPlayer" layoutX="57.0" layoutY="238.0"
+                   promptText="tesserino giocatore"/>
+        <Button layoutX="56.0" layoutY="275.0" mnemonicParsing="false"
+                onAction="#searchTrophyPlayer" prefHeight="25.0" prefWidth="129.0" text="Trofei Giocatore"/>
         <TableView fx:id="trophyPlayerTableView" layoutX="312.0" layoutY="29.0" prefHeight="366.0"
                    prefWidth="530.0">
             <columns>
@@ -19,15 +29,5 @@
                              text="Giocatore"/>
             </columns>
         </TableView>
-        <TextField fx:id="trophyPlayer" layoutX="57.0" layoutY="129.0" prefHeight="25.0" prefWidth="151.0"
-                   promptText="tesserino giocatore"/>
-        <TextField fx:id="trophyYear" layoutX="57.0" layoutY="91.0" promptText="anno campionato"/>
-        <TextField fx:id="trophyName" layoutX="57.0" layoutY="55.0" promptText="nome"/>
-        <Button layoutX="56.0" layoutY="167.0" mnemonicParsing="false"
-                onAction="#addTrophy" prefHeight="25.0" prefWidth="129.0" text="Inserisci"/>
-        <TextField fx:id="trophySearchCardPlayer" layoutX="57.0" layoutY="238.0"
-                   promptText="tesserino giocatore"/>
-        <Button layoutX="56.0" layoutY="275.0" mnemonicParsing="false"
-                onAction="#searchTrophyPlayer" prefHeight="25.0" prefWidth="129.0" text="Trofei Giocatore"/>
     </Pane>
 </AnchorPane>

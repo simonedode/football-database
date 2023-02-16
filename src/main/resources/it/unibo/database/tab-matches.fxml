@@ -9,13 +9,28 @@
             prefHeight="400.0" prefWidth="600.0">
     <Pane prefHeight="200.0" prefWidth="200.0">
         <TextField fx:id="matchTeamHome" layoutX="23.0" layoutY="26.0" promptText="squadra in casa"/>
-        <TextField fx:id="matchGolAway" layoutX="23.0" layoutY="194.0" promptText="gol trasferta"/>
-        <TextField fx:id="matchGolHome" layoutX="23.0" layoutY="160.0" promptText="gol casa"/>
-        <TextField fx:id="matchNumberDay" layoutX="23.0" layoutY="127.0" promptText="numero giornata"/>
-        <TextField fx:id="matchChampionship" layoutX="23.0" layoutY="94.0" promptText="anno campionato"/>
         <TextField fx:id="matchTeamAway" layoutX="23.0" layoutY="61.0" promptText="squadra in trasferta"/>
+        <TextField fx:id="matchChampionship" layoutX="23.0" layoutY="94.0" promptText="anno campionato"/>
+        <TextField fx:id="matchNumberDay" layoutX="23.0" layoutY="127.0" promptText="numero giornata"/>
+        <TextField fx:id="matchGolHome" layoutX="23.0" layoutY="160.0" promptText="gol casa"/>
+        <TextField fx:id="matchGolAway" layoutX="23.0" layoutY="194.0" promptText="gol trasferta"/>
         <Button layoutX="23.0" layoutY="228.0" mnemonicParsing="false" onAction="#addMatch"
                 prefHeight="25.0" prefWidth="134.0" text="Inserisci"/>
+        <TextField fx:id="matchModifyYear" layoutX="23.0" layoutY="271.0" promptText="anno"/>
+        <TextField fx:id="matchModifyNumberDay" layoutX="23.0" layoutY="304.0"
+                   promptText="numero giornata"/>
+        <TextField fx:id="matchModifyTeamHome" layoutX="23.0" layoutY="337.0" promptText="squadra in casa"/>
+        <TextField fx:id="matchModifyGolHome" layoutX="23.0" layoutY="375.0" promptText="gol casa"/>
+        <TextField fx:id="matchModifyGolAway" layoutX="23.0" layoutY="409.0" promptText="gol trasferta"/>
+        <Button layoutX="23.0" layoutY="447.0" mnemonicParsing="false"
+                onAction="#modifyResultMatch" prefHeight="25.0" prefWidth="134.0"
+                text="Modifica Risultato"/>
+        <TextField fx:id="matchGolsYear" layoutX="207.0" layoutY="409.0" promptText="anno campionato"/>
+        <Button layoutX="207.0" layoutY="447.0" mnemonicParsing="false"
+                onAction="#searchMatchMoreGoals" prefHeight="25.0" prefWidth="136.0"
+                text="Partita con più gol"/>
+        <Button layoutX="702.0" layoutY="447.0" mnemonicParsing="false"
+                onAction="#showMatch" prefHeight="25.0" prefWidth="134.0" text="Mostra Partite"/>
         <TableView fx:id="matchTableView" layoutX="236.0" layoutY="26.0" prefHeight="350.0"
                    prefWidth="600.0">
             <columns>
@@ -32,20 +47,5 @@
                              text="GolTrasferta"/>
             </columns>
         </TableView>
-        <TextField fx:id="matchModifyYear" layoutX="23.0" layoutY="271.0" promptText="anno"/>
-        <TextField fx:id="matchModifyNumberDay" layoutX="23.0" layoutY="304.0"
-                   promptText="numero giornata"/>
-        <TextField fx:id="matchModifyTeamHome" layoutX="23.0" layoutY="337.0" promptText="squadra in casa"/>
-        <TextField fx:id="matchModifyGolHome" layoutX="23.0" layoutY="375.0" promptText="gol casa"/>
-        <TextField fx:id="matchModifyGolAway" layoutX="23.0" layoutY="409.0" promptText="gol trasferta"/>
-        <Button layoutX="23.0" layoutY="447.0" mnemonicParsing="false"
-                onAction="#modifyResultMatch" prefHeight="25.0" prefWidth="134.0"
-                text="Modifica Risultato"/>
-        <Button layoutX="702.0" layoutY="447.0" mnemonicParsing="false"
-                onAction="#showMatch" prefHeight="25.0" prefWidth="134.0" text="Mostra Partite"/>
-        <TextField fx:id="matchGolsYear" layoutX="207.0" layoutY="409.0" promptText="anno campionato"/>
-        <Button layoutX="207.0" layoutY="447.0" mnemonicParsing="false"
-                onAction="#searchMatchMoreGoals" prefHeight="25.0" prefWidth="136.0"
-                text="Partita con più gol"/>
     </Pane>
 </AnchorPane>

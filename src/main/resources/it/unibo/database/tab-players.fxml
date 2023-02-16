@@ -13,14 +13,17 @@
         <TextField fx:id="playerCF" layoutX="14.0" layoutY="84.0" promptText="codice fiscale"/>
         <TextField fx:id="playerDate" layoutX="14.0" layoutY="115.0" promptText="nascita (gg/mm/aaaa)"/>
         <TextField fx:id="playerNationality" layoutX="14.0" layoutY="147.0" promptText="nazionalità"/>
+        <ComboBox fx:id="playerRole" cache="true" layoutX="13.0" layoutY="182.0" prefWidth="72.0"
+                  promptText="ruolo" visibleRowCount="4"/>
         <TextField fx:id="playerPresence" layoutX="14.0" layoutY="214.0" promptText="numero presenze"/>
         <TextField fx:id="playerTeam" layoutX="14.0" layoutY="248.0" promptText="squadra"/>
         <TextField fx:id="playerDateStart" layoutX="14.0" layoutY="281.0" promptText="data inizio (gg/mm/aaaa)"/>
+        <TextField fx:id="playerSalary" layoutX="14.0" layoutY="317.0" promptText="Stipendio"/>
         <Button layoutX="14.0" layoutY="351.0" mnemonicParsing="false"
                 onAction="#addPlayer" prefHeight="28.0" prefWidth="138.0" text="Inserisci"/>
         <TextField fx:id="playerID" layoutX="14.0" layoutY="410.0" promptText="tesserino giocatore"/>
-        <ComboBox fx:id="playerRole" cache="true" layoutX="13.0" layoutY="182.0" prefWidth="72.0"
-                  promptText="ruolo" visibleRowCount="4"/>
+        <Button layoutX="14.0" layoutY="442.0" mnemonicParsing="false"
+                onAction="#deletePlayer" prefHeight="25.0" prefWidth="136.0" text="Elimina"/>
         <TableView fx:id="playerTableView" layoutX="170.0" layoutY="28.0" prefHeight="429.0"
                    prefWidth="725.0" >
             <columns>
@@ -48,9 +51,5 @@
                              text="Stipendio"/>
             </columns>
         </TableView>
-        <Button layoutX="14.0" layoutY="442.0" mnemonicParsing="false"
-                onAction="#deletePlayer" prefHeight="25.0" prefWidth="136.0" text="Elimina"/>
-        <TextField fx:id="playerSalary" layoutX="14.0" layoutY="317.0" promptText="Stipendio"/>
     </Pane>
-
 </AnchorPane>
