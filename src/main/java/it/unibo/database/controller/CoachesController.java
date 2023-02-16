@@ -90,6 +90,7 @@ public class CoachesController {
             this.coachesTable.createTable();
 
             initializeTable();
+            showCoaches();
         });
     }
 

@@ -54,11 +54,10 @@ public class TeamsController {
         Platform.runLater(() -> {
             this.teamsTable = new TeamsTable(MySQLConnection.getConnection());
             this.teamsTable.createTable();
-
             ObservableList<String> list = FXCollections.observableArrayList("P", "D", "C", "A");
             this.teamChooseRole.setItems(list);
-
             initializeTable();
+            showTeams();
         });
     }
     @FXML
