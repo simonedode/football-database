@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="it.unibo.database.controller.CoachesController"
+            prefHeight="400.0" prefWidth="600.0">
+    <Pane prefHeight="543.0" prefWidth="890.0">
+        <TextField fx:id="coachName" layoutX="14.0" layoutY="21.0" prefHeight="25.0" prefWidth="138.0"
+                   promptText="nome"/>
+        <TextField fx:id="coachSurname" layoutX="14.0" layoutY="52.0" prefHeight="25.0" prefWidth="137.0"
+                   promptText="cognome"/>
+        <TextField fx:id="coachCF" layoutX="14.0" layoutY="84.0" prefHeight="25.0" prefWidth="137.0"
+                   promptText="codice fiscale"/>
+        <TextField fx:id="coachDate" layoutX="14.0" layoutY="115.0" prefHeight="25.0" prefWidth="138.0"
+                   promptText="nascita (gg/mm/aaaa)"/>
+        <TextField fx:id="coachNationality" layoutX="14.0" layoutY="147.0" prefHeight="25.0"
+                   prefWidth="138.0" promptText="nazionalità"/>
+        <TextField fx:id="coachNumberTeams" layoutX="14.0" layoutY="215.0" prefHeight="25.0"
+                   prefWidth="137.0" promptText="numero squadre allenate"/>
+        <TextField fx:id="coachTeam" layoutX="14.0" layoutY="181.0" prefHeight="25.0" prefWidth="137.0"
+                   promptText="squadra"/>
+        <Button layoutX="20.0" layoutY="322.0" mnemonicParsing="false" onAction="#addCoach"
+                prefHeight="28.0" prefWidth="123.0" text="Inserisci"/>
+        <TextField fx:id="coachID" layoutX="14.0" layoutY="404.0" prefHeight="25.0" prefWidth="134.0"
+                   promptText="tesserino allenatore"/>
+        <Button layoutX="14.0" layoutY="438.0" mnemonicParsing="false"
+                onAction="#deleteCoach" prefHeight="28.0" prefWidth="116.0" text="Elimina"/>
+        <TableView fx:id="coachTableView" layoutX="180.0" layoutY="23.0" prefHeight="429.0"
+                   prefWidth="720.0">
+            <columns>
+                <TableColumn fx:id="tabCoachName" editable="false" prefWidth="65.0" sortable="false"
+                             text="Nome"/>
+                <TableColumn fx:id="tabCoachSurname" editable="false" prefWidth="75.0" sortable="false"
+                             text="Cognome"/>
+                <TableColumn fx:id="tabCoachCF" editable="false" prefWidth="42.39996337890625"
+                             sortable="false" text="CF"/>
+                <TableColumn fx:id="tabCoachDate" editable="false" prefWidth="86.39996337890625"
+                             sortable="false" text="DataNascita"/>
+                <TableColumn fx:id="tabCoachNationality" editable="false" prefWidth="84.0" sortable="false"
+                             text="Nazionalità"/>
+                <TableColumn fx:id="tabCoachCard" editable="false" prefWidth="74.39996337890625"
+                             sortable="false" text="Tesserino"/>
+                <TableColumn fx:id="tabCoachPresence" editable="false" prefWidth="88.39996337890625"
+                             sortable="false" text="SquadreAllenate"/>
+                <TableColumn fx:id="tabCoachTeam" editable="false" prefWidth="70.4000244140625"
+                             sortable="false" text="Squadra"/>
+                <TableColumn fx:id="tabCoachDateStart" editable="false" prefWidth="63.199951171875"
+                             sortable="false" text="DataInizio"/>
+                <TableColumn fx:id="tabCoachSalary" editable="false" prefWidth="63.199951171875"
+                             sortable="false" text="Stipendio"/>
+            </columns>
+        </TableView>
+        <TextField fx:id="coachDateStart" layoutX="15.0" layoutY="249.0" prefHeight="25.0" prefWidth="136.0"
+                   promptText="data inizio (gg/mm/aaaa)">
+            <font>
+                <Font size="11.0"/>
+            </font>
+        </TextField>
+        <TextField fx:id="coachSalary" layoutX="15.0" layoutY="285.0" prefHeight="25.0" prefWidth="139.0" promptText="Stipendio"/>
+    </Pane>
+
+</AnchorPane>
