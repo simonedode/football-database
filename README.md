@@ -19,7 +19,7 @@ git clone https://github.com/simonedode/football-database.git
 cd football-database
 ```
 
-### Builds
+### Build
 To build the assets, you need to run the following command:
 ```bash
 ./gradlew build
