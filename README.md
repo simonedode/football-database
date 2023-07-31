@@ -1,6 +1,6 @@
 # Football Database
 
-### A simple application to manage information about football championships
+### A simple application to manage information about football leagues
 ![Application image](./images/application.png)
 
 ## Prerequisites
